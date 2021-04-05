@@ -1,4 +1,4 @@
-package fr.rayane.repetitionreviewer;
+package fr.rayane.repetitionreviewer.controller;
 
 import fr.rayane.repetitionreviewer.controller.ReviewAlgorithmController;
 import fr.rayane.repetitionreviewer.entity.Review;
