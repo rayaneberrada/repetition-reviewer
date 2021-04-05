@@ -22,7 +22,11 @@ public class ReviewAlgorithmService {
 
       review.repetitions++;
       review.easeFactor =
-          (review.easeFactor + (0.1 - (5 - review.quality) * (0.08 + (5 - review.quality) * 0.02)));
+          (review.easeFactor
+              + (0.1
+                  - (QualityConstant.PERFECT_RESPONSE.ordinal() - review.quality)
+                      * (0.08
+                          + (QualityConstant.PERFECT_RESPONSE.ordinal() - review.quality) * 0.02)));
     } else {
       review.repetitions = 0;
       review.interval = 1;
