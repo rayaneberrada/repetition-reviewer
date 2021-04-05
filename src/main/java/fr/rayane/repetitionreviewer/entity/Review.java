@@ -1,12 +1,16 @@
 package fr.rayane.repetitionreviewer.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.PositiveOrZero;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class Review {
   @Min(value = 0, message = "Quality has to be superior or eaquel to 0")
